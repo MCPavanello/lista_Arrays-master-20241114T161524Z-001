@@ -1,0 +1,65 @@
+<script>
+    //Problema: Loja de veículos
+    //Crie os seguintes arrays:
+    // let carrosSUV = ["Tiggo", "Sportage", "Tucson", "EcoSport"];
+    // let cassosSedan = ["Civic", "Corolla", "Arizzo", "Fusion"];
+    // let carrosHatch = ["308", "Focus", "i30"];
+    
+    //Peça para o usuário informar mais três veículos para serem inseridos na lista. Para inserir na lista correta, peça também para o usuário identificar o tipo de veículo que deseja inserir, se é SUV, Sedan ou Hatch.
+
+    //Apresente a lista final de cada tipo de veículo.
+
+    //ENTRADA
+    let carrosSUV = ["Tiggo", "Sportage", "Tucson", "EcoSport"];
+    let carrosSedan = ["Civic", "Corolla", "Arizzo", "Fusion"];
+    let carrosHatch = ["308", "Focus", "i30"];
+
+    let carro1 = prompt(`Qual o primeiro carro que vocẽ deseja adicionar a lista?`);
+    let tipo1 = prompt(`Qual o tipo desse carro?`)
+    let carro2 = prompt(`Qual o segundo carro que você deseja adicionar a lista?`);
+    let tipo2 = prompt(`Qual o tipo desse carro?`)
+    let carro3 = prompt(`Qual o terceiro carro que você deseja adicionar a lista?`);
+    let tipo3  = prompt(`Qual o tipo desse carro?`)
+    //PROCESSAMENTO
+    if(tipo1 === "SUV"){
+        carrosSUV.push(`${carro1}`);
+    }
+    else if(tipo1 === "Sedam"){
+        carrosSedan.push(`${carro1}`);
+    }
+    else if(tipo1 === "Hatch"){
+        carrosHatch.push(`${carro1}`);
+    }
+    else{
+        alert(`O tipo desse carro não pertence a nenhuma lista.`);
+    }
+    if(tipo2 === "SUV"){
+        carrosSUV.push(`${carro2}`);
+    }
+    else if(tipo2 === "Sedan"){
+        carrosSedan.push(`${carro2}`);
+    }
+    else if(tipo2 === "Hatch"){
+        carrosHatch.push(`${carro2}`);
+    }
+    else{
+        alert(`O tipo desse carro não pertence a nenhuma lista.`);
+    }
+    if(tipo3 === "SUV"){
+        carrosSUV.push(`${carro3}`);
+    }
+    else if(tipo3 === "Sedan"){
+        carrosSedan.push(`${carro3}`);
+    }
+    else if(tipo3 === "Hatch"){
+        carrosHatch.push(`${carro3}`);
+    }
+    else{
+        alert(`O tipo desse carro não pertence a nenhuma lista.`);
+    }
+    
+    document.write(`As novas listas são: <br>  ${carrosSedan.join(", ")}; <br> ${carrosHatch.join(", ")}; <br> ${carrosSUV.join(`, `)}`);
+
+    //SAÍDA
+
+</script>
